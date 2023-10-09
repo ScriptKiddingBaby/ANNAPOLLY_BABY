@@ -11,9 +11,7 @@
 
 	import email_icon from "$lib/Images/headerIcons/email_icon.svg";
 	import fb_icon from "$lib/Images/headerIcons/fb_icon.svg";
-	import feed_icon from "$lib/Images/headerIcons/feed_icon.svg";
 	import phone_icon from "$lib/Images/headerIcons/phone_icon.svg";
-	import annapol_logo from "$lib/Images/annapol_img/annapol_logo.png";
 	import Footer from './Footer.svelte';
 	import { scale, slide } from 'svelte/transition';
 	
