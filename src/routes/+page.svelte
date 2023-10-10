@@ -8,39 +8,48 @@
 	import { scale } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 
+	import { browser } from '$app/environment';
+	import Carousel from 'svelte-carousel'
+
+	const banners = [homebanner1, homebanner2]
+
+	let carousel: { goToNext: () => void; }; // for calling methods of the carousel instance
+	const handleNextClick = () => {
+		carousel.goToNext()
+	}
+
 </script>
 
 <main class="mt-[30vh] sm:mt-[20vh] text-xs sm:text-base" in:scale>
-	
-	<Splide aria-label="My Favorite Images" options={{
-		rewind: false,
-		arrows: false,
-		autoplay: true,
-	}}>
-		<SplideSlide>
-			<div class="flex absolute bottom-0 left-0 right-0 p-2">
-				<div class="w-full"></div>
-				<Button bg="bg-blue-900" title="Sangla Now!" on:click={() => goto("/ApplyNow")}/>
-				<div class="w-full"></div>
-			</div>
-			
-				<img src={homebanner1} alt="loading" class="w-full cursor-grab "/>
-			
-		</SplideSlide>
+	<div class="pt-2">
+		{#if browser}
+			<Carousel
+				bind:this={carousel}
+				autoplay
+				autoplayDuration={5000}
+				autoplayProgressVisible
+				pauseOnFocus
+				arrows={false}
+				>
+				{#each banners as selection}
+					
+					<div class="">
+						<div class="absolute w-full bottom-0 top-0 flex justify-center items-end ">
+							
+							<div class="m-5">
+								<Button bg="bg-blue-500" title="Sangla Now!" on:click={() => goto("/ApplyNow")}/>
+							</div>
+							
+						</div>
+						<img src={selection} alt="loading" class="" />
+						
+					</div>
 
-		<SplideSlide>
-			<div class="flex absolute bottom-0 left-0 right-0 p-2">
-				<div class="w-full"></div>
-				<Button bg="bg-blue-900" title="Sangla Now!" on:click={() => goto("/ApplyNow")}/>
-				<div class="w-full"></div>
-			</div>
-
-			<img src={homebanner2} alt="loading" class="w-full cursor-grab"/>
-			
-		</SplideSlide>
-
-	</Splide>
-	
+				{/each}
+				
+			</Carousel>
+		{/if}
+	</div>
 
 	<div class="bg-gradient-to-br from-blue-500 to-blue-800 flex flex-col gap-4 py-10 rounded-b-full -mt-4">
 		<h3 class="h3 text-white text-center">FAST AND EASY</h3>
