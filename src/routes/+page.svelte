@@ -1,4 +1,5 @@
 <script lang="ts">
+// @ts-nocheck
 	import '@splidejs/svelte-splide/css/core';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 	import homebanner1 from "$lib/Images/annapol_img/homebanner_1.webp";
@@ -7,26 +8,22 @@
 	import Button from '$lib/Components/Button.svelte';
 	import { scale } from 'svelte/transition';
 	import { goto } from '$app/navigation';
-
+	
 	import { browser } from '$app/environment';
+	
 	import Carousel from 'svelte-carousel'
 
 	const banners = [homebanner1, homebanner2]
 
-	let carousel: { goToNext: () => void; }; // for calling methods of the carousel instance
-	const handleNextClick = () => {
-		carousel.goToNext()
-	}
-
+	
 </script>
 
 <main class="mt-[30vh] sm:mt-[20vh] text-xs sm:text-base" in:scale>
 	<div class="pt-2">
 		{#if browser}
 			<Carousel
-				bind:this={carousel}
 				autoplay
-				autoplayDuration={5000}
+				autoplayDuration={3000}
 				autoplayProgressVisible
 				pauseOnFocus
 				arrows={false}
