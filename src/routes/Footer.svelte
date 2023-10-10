@@ -20,7 +20,7 @@
 	import Button from "$lib/Components/Button.svelte";
 </script>
 
-<footer class="p-4 bg-gradient-to-bl from-blue-700 to-green-400 text-xs sm:text-base flex flex-col gap-5 sm:flex-row">
+<footer class="p-4 bg-gradient-to-bl from-blue-700 to-green-400 text-xs sm:text-base flex flex-col gap-5 sm:flex-row justify-evenly">
     <div class="text-white flex flex-col gap-2">
         <h4 class="h4 border-b-2 border-yellow-500 max-w-fit">Useful Links</h4>
 
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 ">
         <h4 class="h4 text-center text-white">KEEP CONNECTED</h4>
         <div class="flex flex-col gap-1 text-white">
             <div class="flex gap-1 items-center">
