@@ -4,10 +4,11 @@
     import foot3 from "$lib/Images/Loan/footer3.webp";
     import motor from "$lib/Images/Loan/motor.webp";
     import tricy from "$lib/Images/Loan/tricy.webp";
+	import { fly, scale } from "svelte/transition";
 
 </script>
 
-<main class="min-h-[100vh] text-xs sm:text-base p-2">
+<main class="min-h-[100vh] text-xs sm:text-base p-2" in:scale>
     <div class="mt-[35vh] sm:mt-[30vh] flex flex-col gap-2">
         <div class="p-4 sm:max-w-xl mx-auto ">
             <h2 class="h2 text-center p-4">ORCR Loans</h2>
@@ -18,7 +19,7 @@
 
 
         <div class="flex flex-col gap-2 sm:flex-row mt-10">
-            <div class="card card-hover flex flex-col gap-2 p-4 sm:p-10 w-full">
+            <div class="card card-hover flex flex-col gap-2 p-4 sm:p-10 w-full" in:fly={{y:200, duration:1000}}>
                 <div class="">
                     <img src={motor} alt="loading" class="w-full h-[50vh]"/>
                 </div>
@@ -48,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="card card-hover flex flex-col gap-2 p-4 sm:p-10 w-full">
+            <div class="card card-hover flex flex-col gap-2 p-4 sm:p-10 w-full" in:fly={{y:-200, duration:1000}}>
                 <div class="">
                     <img src={tricy} alt="loading" class="w-full h-[50vh]"/>
                 </div>
