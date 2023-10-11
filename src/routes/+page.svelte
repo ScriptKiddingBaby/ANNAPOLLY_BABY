@@ -1,7 +1,5 @@
 <script lang="ts">
 // @ts-nocheck
-	import '@splidejs/svelte-splide/css/core';
-	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 	import homebanner1 from "$lib/Images/annapol_img/homebanner_1.webp";
 	import homebanner2 from "$lib/Images/annapol_img/homebanner_2.webp";
 	import homebanner3 from "$lib/Images/annapol_img/homebanner_3.webp";
@@ -18,7 +16,7 @@
 	
 </script>
 
-<main class="mt-[30vh] sm:mt-[20vh] text-xs sm:text-base" in:scale>
+<main in:scale>
 	<div class="pt-2">
 		{#if browser}
 			<Carousel
@@ -78,6 +76,5 @@
 			<img src={homebanner3} alt="loading" class="h-[300px] w-full" />
 		</div>
 	</div>
-
 
 </main>

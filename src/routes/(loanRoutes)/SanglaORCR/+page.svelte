@@ -8,8 +8,8 @@
 
 </script>
 
-<main class="min-h-[100vh] text-xs sm:text-base p-2" in:scale>
-    <div class="mt-[35vh] sm:mt-[30vh] flex flex-col gap-2">
+<main class="" in:scale>
+    <div class="flex flex-col gap-2">
         <div class="p-4 sm:max-w-xl mx-auto ">
             <h2 class="h2 text-center p-4">ORCR Loans</h2>
             <p class="font-semibold text-center">

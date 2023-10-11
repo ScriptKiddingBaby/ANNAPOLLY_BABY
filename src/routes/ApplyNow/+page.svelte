@@ -11,9 +11,9 @@
 
 </script>
 
-<main class="text-xs sm:text-base" in:scale>
+<main class="" in:scale>
     
-    <div class="mt-[25vh] sm:flex">
+    <div class="sm:flex">
 
         <div class="">
             <img src={applynowbanner} alt="loading" class=" sm:h-[100vh]" />

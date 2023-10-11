@@ -19,8 +19,6 @@
     let map: any;
     let mapContainer: any;
     
-   
-
     onMount(() => {
         
         if($page.params.slug === "HeadOffice"){
@@ -45,8 +43,8 @@
 
 {#each $statics.locationRoutes as route, index}
     {#if $statics.locComparison === index}
-    <main class=" text-xs sm:text-base p-4 flex flex-col gap-4" in:scale>
-        <div class="mt-[30vh] sm:mt-[25vh]">
+    <main class=" flex flex-col gap-4" in:scale>
+        <div class="">
             <h2 class="h2">{route.rowOne.header}</h2>
         </div>
         

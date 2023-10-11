@@ -63,7 +63,9 @@
 		<Navigation />
 	</div>
 
-	<slot />
+	<div class="mt-[25vh] text-xs sm:text-base p-2">
+		<slot />
+	</div>
 
 </div>
 

@@ -5,8 +5,8 @@
     
 </script>
 
-<main class=" text-xs sm:text-base" in:scale>
-    <div class="mt-[25vh] p-2 flex flex-col gap-2">
+<main class="" in:scale>
+    <div class="p-2 flex flex-col gap-2">
         <a href="/Career" class="underline text-blue-500 hover:text-red-500 max-w-fit p-2">Back to career?</a>
         <div class="border-2 border-green-500 flex flex-col">
             <h4 class="h4 text-center bg-green-500 p-4 text-white ">Loan Agent Career</h4>

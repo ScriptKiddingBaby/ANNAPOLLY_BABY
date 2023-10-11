@@ -6,8 +6,8 @@
 	import { fly, scale, slide } from "svelte/transition";
 </script>
 
-<main class=" text-xs sm:text-base" in:scale>
-    <div class="mt-[23vh] flex flex-col sm:flex-row items-center">
+<main class="" in:scale>
+    <div class="flex flex-col sm:flex-row items-center">
 
         <div class="">
             <img loading="lazy" src={firstBanner} alt="loading" class=""/>
