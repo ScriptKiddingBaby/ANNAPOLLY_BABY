@@ -4,7 +4,7 @@
     import { statics } from "$lib";
     import { createEventDispatcher } from "svelte";
 
-    export let array_data: Navigation[] = [{url: "#", title: "Sample One"}];
+    export let array_data: Navigation[] = [{url: "#", title: "Sample One", index: 0}];
     export let title = "Sample title";
 
     const dispatch = createEventDispatcher();
@@ -29,7 +29,8 @@
         showMenu();
         $statics.activeItem = selection.url;
         dsComp.showMenu = false;
-        
+        $statics.locComparison = selection.index;
+
         dispatch("trigger", {
             close: true
         })

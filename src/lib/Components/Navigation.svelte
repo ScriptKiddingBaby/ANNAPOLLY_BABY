@@ -6,6 +6,7 @@
 
     import type { Navigation } from "$lib/types";
     import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
 
 
 
@@ -38,10 +39,11 @@
     }
 
     const selectHandler = (selection: Navigation) =>
-    {   
+    {  
         $statics.activeItem = selection.url;
         showMenuFunc();
         $statics.showMenu = false;
+        
     }
    
 </script>
