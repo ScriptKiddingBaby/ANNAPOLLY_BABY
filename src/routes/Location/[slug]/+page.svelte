@@ -1,12 +1,11 @@
 <script lang="ts">
 
-    import jollibeplaza from "$lib/Images/Location/HeadOffice/jollibeeplaza.webp";
     import addressIcon from "$lib/Images/Location/address.svg";
     import emailIcon from "$lib/Images/Location/email.svg";
     import facebookIcon from "$lib/Images/Location/facebook.svg";
     import mobilePhoneIcon from "$lib/Images/Location/mobilePhone.svg";
 
-    import { onDestroy, onMount, afterUpdate, beforeUpdate } from 'svelte'
+    import { onMount} from 'svelte'
 	import Button from "$lib/Components/Button.svelte";
 	import { fly, scale } from "svelte/transition";
 
@@ -62,7 +61,7 @@
         </div>
 
         <div class=" flex flex-col gap-4 sm:flex-row">
-            <div class="flex flex-col justify-evenly gap-2 card p-4 shadow-sm shadow-black w-full" in:fly={{x:200, duration:1000}}>
+            <div class="flex flex-col justify-evenly gap-2 card p-4 shadow-sm shadow-black w-full break-words" in:fly={{x:200, duration:1000}}>
             
 
                 <div class="flex flex-col gap-2"> 
@@ -84,8 +83,11 @@
 
                     <div class="flex gap-1">
                         <img src={emailIcon} alt="loading" class="w-6" />
-                        <p class="font-semibold">{route.rowTwo.innerRowOne.gmail}</p>
+                        
+                        <p class="font-semibold overflow-hidden">{route.rowTwo.innerRowOne.gmail}</p>
+                      
                     </div>
+                    
                 </div>
 
                 <div class="flex flex-col gap-2">
