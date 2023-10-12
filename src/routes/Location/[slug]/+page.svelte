@@ -7,18 +7,14 @@
 
     import { onMount} from 'svelte'
 	import Button from "$lib/Components/Button.svelte";
+
 	import { fly, scale } from "svelte/transition";
 
     import { statics } from "$lib";
-    import type { DynamicRoute } from "$lib/types";
     import { page } from "$app/stores";
 	import { goto } from "$app/navigation";
 	import Mapper from "./Mapper.svelte";
-	import { browser } from "$app/environment";
 
-    let map: any;
-    let mapContainer: any;
-    
     onMount(() => {
         
         if($page.params.slug === "HeadOffice"){
@@ -40,9 +36,14 @@
     });
 
 </script>
+<svelte:head>
+    <title>ANNAPOLIS FINANCE {$page.params.slug.toUpperCase()}</title>
+</svelte:head>
 
 {#each $statics.locationRoutes as route, index}
     {#if $statics.locComparison === index}
+    
+
     <main class=" flex flex-col gap-4 mt-2" in:scale>
         <div class="">
             <h2 class="h2 p-2">{route.rowOne.header}</h2>

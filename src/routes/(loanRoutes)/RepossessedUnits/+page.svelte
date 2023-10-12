@@ -12,7 +12,9 @@
 
 
 </script>
-
+<svelte:head>
+    <title>ANNAPOLIS FINANCE REPO UNITS</title>
+</svelte:head>
 <main class="" in:scale>
     <div class="min-h-[100vh]">
         <h1 class="h1 text-center p-5">Repossessed Units</h1>

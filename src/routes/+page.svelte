@@ -15,6 +15,10 @@
 	
 </script>
 
+<svelte:head>
+    <title>ANNAPOLIS FINANCE HOME PAGE</title>
+</svelte:head>
+
 <main in:scale>
 	<div class="pt-2">
 		{#if browser}
@@ -40,7 +44,7 @@
 	</div>
 
 	<div class="bg-gradient-to-br from-blue-500 to-blue-800 flex flex-col gap-4 py-10 rounded-b-full -mt-4">
-		<h3 class="h3  text-center text-white">FAST AND EASY</h3>
+		
 		<div class="flex">
 			<div class="w-full"></div>
 			<Button  text="text-white border-2 " title="INQUIRE NOW!" on:click={() => goto("/ApplyNow")}/>

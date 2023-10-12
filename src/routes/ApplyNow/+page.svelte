@@ -11,6 +11,10 @@
 
 </script>
 
+<svelte:head>
+    <title>ANNAPOLIS FINANCE APPLY NOW</title>
+</svelte:head>
+
 <main class="" in:scale>
     
     <div class="sm:flex">

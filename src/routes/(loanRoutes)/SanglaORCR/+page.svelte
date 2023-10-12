@@ -7,7 +7,9 @@
 	import { fly, scale } from "svelte/transition";
 
 </script>
-
+<svelte:head>
+    <title>ANNAPOLIS FINANCE ORCR LOANS</title>
+</svelte:head>
 <main class="" in:scale>
     <div class="flex flex-col gap-2">
         <div class="p-4 sm:max-w-xl mx-auto ">

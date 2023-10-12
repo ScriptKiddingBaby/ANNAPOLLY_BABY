@@ -6,6 +6,9 @@
 	import { fly, scale, slide } from "svelte/transition";
 </script>
 
+<svelte:head>
+    <title>ANNAPOLIS FINANCE CAREER</title>
+</svelte:head>
 <main class="" in:scale>
     <div class="flex flex-col sm:flex-row items-center">
 
@@ -18,7 +21,7 @@
             <div class="flex absolute mt-[20vh]" in:fly={{y:200, duration:600}}>
                 
                 <div class="w-full">
-                    <Button bg="bg-blue-500" title="Join our Team!" on:click={() => goto("/Career/LoanAgentCareer")}/>
+                    <Button bg="bg-[#0001A2] animate-bounce" title="Join our Team!" on:click={() => goto("/Career/LoanAgentCareer")}/>
                 </div>
                 
             </div>
