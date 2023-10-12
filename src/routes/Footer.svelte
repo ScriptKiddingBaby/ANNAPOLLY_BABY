@@ -69,34 +69,34 @@
         </div>
 
         <div class="flex justify-center p-2 gap-2 ">
-            <div class="bg-white">
+            <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_fb_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/521654/facebook.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
             
             <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_ig_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/521711/instagram.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
         
             <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_tiktok_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/447122/tiktok-fill.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
         
             <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_twitter_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/521900/twitter.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
         
             <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_mail_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/511921/email-1573.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
         
             <div class="">
                 
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src={kc_rss_icon} alt="loading" class="w-6" /></a>
+                <a href="/" class="text-black underline hover:scale-105 active:scale-95"><img src="https://www.svgrepo.com/show/532880/rss.svg" alt="loading" class="rounded-full w-6 p-1 border-[0.1rem] border-black" /></a>
             </div>
         </div>
     </div>
