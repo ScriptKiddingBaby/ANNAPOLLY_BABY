@@ -61,7 +61,7 @@
 					<p class="text-black">Annapol Finance</p>
 				</div>
 		
-				<div class="flex items-center justify-center">
+				<div class="flex items-center justify-center gap-1">
 					<img src="https://www.svgrepo.com/show/501173/email.svg" alt="loading" class="w-6 rounded-full p-1 border-[0.1rem] border-black"/>
 					<p class="text-black">customerservice@annapolis.com.ph</p>
 				</div>
