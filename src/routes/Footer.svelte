@@ -1,10 +1,4 @@
 <script lang="ts">
-    import kc_fb_icon from "$lib/Images/footerIcons/KeepConnected/kc_fb_icon.svg";
-    import kc_ig_icon from "$lib/Images/footerIcons/KeepConnected/kc_ig_icon.svg";
-    import kc_mail_icon from "$lib/Images/footerIcons/KeepConnected/kc_mail_icon.svg";
-    import kc_rss_icon from "$lib/Images/footerIcons/KeepConnected/kc_rss_icon.svg";
-    import kc_tiktok_icon from "$lib/Images/footerIcons/KeepConnected/kc_tiktok_icon.svg";
-    import kc_twitter_icon from "$lib/Images/footerIcons/KeepConnected/kc_twitter_icon.svg";
 	import Button from "$lib/Components/Button.svelte";
 </script>
 
