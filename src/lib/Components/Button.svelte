@@ -6,6 +6,7 @@
     export let bg = "bg-green-500";
     export let round = "rounded-lg";
     export let text = "text-white";
+    
 </script>
 
 <button class="{bg} {pad} {round} {text} w-full transition-all hover:shadow-lg hover:shadow-black active:scale-95 hover:font-semibold"

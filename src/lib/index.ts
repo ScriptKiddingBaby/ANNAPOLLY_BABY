@@ -321,4 +321,5 @@ export const statics = writable({
     ],
     locComparison: 0.1,
 
+    pawalainNatin: true,
 })

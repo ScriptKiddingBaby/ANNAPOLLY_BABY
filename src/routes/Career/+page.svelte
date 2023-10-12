@@ -18,7 +18,7 @@
             <div class="flex absolute mt-[20vh]" in:fly={{y:200, duration:600}}>
                 
                 <div class="w-full">
-                    <Button title="Join our Team!" on:click={() => goto("/Career/LoanAgentCareer")}/>
+                    <Button bg="bg-blue-500" title="Join our Team!" on:click={() => goto("/Career/LoanAgentCareer")}/>
                 </div>
                 
             </div>

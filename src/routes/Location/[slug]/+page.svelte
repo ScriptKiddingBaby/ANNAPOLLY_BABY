@@ -43,9 +43,9 @@
 
 {#each $statics.locationRoutes as route, index}
     {#if $statics.locComparison === index}
-    <main class=" flex flex-col gap-4" in:scale>
+    <main class=" flex flex-col gap-4 mt-2" in:scale>
         <div class="">
-            <h2 class="h2">{route.rowOne.header}</h2>
+            <h2 class="h2 p-2">{route.rowOne.header}</h2>
         </div>
         
 

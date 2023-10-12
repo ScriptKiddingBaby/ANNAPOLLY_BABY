@@ -48,7 +48,7 @@
    
 </script>
 
-<nav class="bg-blue-500 p-2 fixed left-0 right-0">
+<nav class="bg-blue-500 shadow-lg shadow-black p-2 fixed left-0 right-0">
     <div class="flex items-center w-full">
         <button class="flex flex-col gap-1 {dsComp.css.padding} sm:hidden"
         on:click={showMenuFunc}
@@ -58,24 +58,26 @@
             <div class="{dsComp.css.rotateTwo} w-6 border-2 transition-all border-green-300"></div>
         </button>
     
-        <div class="flex items-center  justify-center sm:justify-start w-full">
+        <button class="flex items-center  justify-center sm:justify-start w-full" on:click={() => goto("/")}>
             <img src={annapol_logo} alt="loading" class="w-10"/>
             <h4 class="h4 text-white">Annapolis Finance Inc.</h4>
-        </div>
+        </button>
         
         <div class="w-full items-center hidden sm:flex">
           
-            <div class="w-full">
-                <Accordion title="Loan" array_data={$statics.loan} />
-            </div>
-
-            <div class="w-full">
-                <Accordion title="Location" array_data={$statics.location}  />
+            <div class="flex gap-2">
+                <div class="w-[10vw]">
+                    <Accordion bg="bg-blue-500 font-serif" color="text-white " title="Loan" array_data={$statics.loan} />
+                </div>
+    
+                <div class="w-[10vw]">
+                    <Accordion bg="bg-blue-500 font-serif" color="text-white " title="Location" array_data={$statics.location}  />
+                </div>
             </div>
 
             {#each $statics.normalNav as selection }
                 <div class="w-full text-center">
-                    <a href={selection.url} class=" text-white p-2 hover:border-[0.1rem] transition-al"
+                    <a href={selection.url} class=" text-white p-2 font-serif hover:border-[0.1rem] transition-al"
                     class:active={$statics.activeItem === selection.url}
                     on:click={() => selectHandler(selection)}
                     >{selection.title}</a>
@@ -106,7 +108,9 @@
 
 <style>
     .active {
-        background-color: green;
+        background-color: #22C55E;
+        color: white;
+        border: 0.1rem solid white;
     }
 </style>
 
