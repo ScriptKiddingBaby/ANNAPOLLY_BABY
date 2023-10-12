@@ -9,9 +9,6 @@
 
 	import Navigation from "$lib/Components/Navigation.svelte";
 
-	import email_icon from "$lib/Images/headerIcons/email_icon.svg";
-	import fb_icon from "$lib/Images/headerIcons/fb_icon.svg";
-	import phone_icon from "$lib/Images/headerIcons/phone_icon.svg";
 	import Footer from './Footer.svelte';
 	import { scale, slide } from 'svelte/transition';
 	
