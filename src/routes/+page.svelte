@@ -33,7 +33,7 @@
 					
 					<div class="">
 						
-						<img src={selection} alt="loading" class="" />
+						<img loading="lazy" src={selection} alt="loading" class="" />
 						
 					</div>
 

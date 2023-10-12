@@ -17,10 +17,10 @@
 
 <main class="" in:scale>
     
-    <div class="sm:flex">
+    <div class="sm:flex mt-5">
 
         <div class="">
-            <img src={applynowbanner} alt="loading" class=" sm:h-[100vh]" />
+            <img src={applynowbanner} alt="loading" class="sm:h-[100%]" />
         </div>
 
         <div class=" p-4 mx-auto sm:max-w-xl card rounded-none shadow-lg shadow-black flex flex-col gap-2 w-full">

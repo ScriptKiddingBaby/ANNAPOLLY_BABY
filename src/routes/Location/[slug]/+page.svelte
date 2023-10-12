@@ -59,29 +59,28 @@
             
         </div>
 
-        <div class=" flex flex-col gap-4 sm:flex-row">
+        <div class=" flex flex-col gap-4 sm:flex-row text-black">
             <div class="flex flex-col justify-evenly gap-2 card p-4 shadow-sm shadow-black w-full break-words" in:fly={{x:200, duration:1000}}>
-            
-
                 <div class="flex flex-col gap-2"> 
                     <h4 class="h4 text-center">{route.rowTwo.innerRowOne.header}</h4>
-                    <div class="flex gap-1">
-                        <img src={addressIcon} alt="loading" class="w-6" />
+                    <div class="flex gap-1 items-center">
+                        <img src="https://www.svgrepo.com/show/488218/gps.svg" alt="loading" class="w-6 border-[0.1rem] rounded-full p-1 border-black" />
                         <a href={route.rowTwo.innerRowOne.address.link} target="_blank" class="text-base text-blue-500 underline hover:text-red-500 active:scale-95">{route.rowTwo.innerRowOne.address.name}</a>
                     </div>
 
-                    <div class="flex gap-1">
-                        <img src={mobilePhoneIcon} alt="loading" class="w-6" />
+                    <div class="flex gap-1 items-center">
+                        <img src="
+                        https://www.svgrepo.com/show/379074/mobile-phone.svg" alt="loading" class="w-6 border-[0.1rem] rounded-full p-1 border-black" />
                         <p class="font-semibold">{route.rowTwo.innerRowOne.mobileNum}</p>
                     </div>
 
-                    <div class="flex gap-1">
-                        <img src={facebookIcon} alt="loading" class="w-6" />
+                    <div class="flex gap-1 items-center">
+                        <img src="https://www.svgrepo.com/show/500854/facebook.svg" alt="loading" class="w-6 border-[0.1rem] rounded-full p-1 border-black" />
                         <a href={route.rowTwo.innerRowOne.facebook.link} target="_blank" class="text-base text-blue-500 underline hover:text-red-500 active:scale-95">{route.rowTwo.innerRowOne.facebook.name}</a>
                     </div>
 
-                    <div class="flex gap-1">
-                        <img src={emailIcon} alt="loading" class="w-6" />
+                    <div class="flex gap-1 items-center">
+                        <img src="https://www.svgrepo.com/show/511921/email-1573.svg" alt="loading" class="w-6 border-[0.1rem] rounded-full p-1 border-black" />
                         
                         <p class="font-semibold overflow-hidden">{route.rowTwo.innerRowOne.gmail}</p>
                       
