@@ -47,3 +47,21 @@ export type DynamicRoute = {
     }
     
 }
+
+export type RepoUnits = {
+    id: number
+    created_at: Date
+    name: string
+    price: string
+    contact_number: string
+    condition: string 
+    img_url: string
+}
+
+export type ConvertedRepoArray = {
+    column: {
+        item1: RepoUnits | null
+        item2: RepoUnits | null
+        item3: RepoUnits | null
+    }
+}

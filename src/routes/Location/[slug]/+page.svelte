@@ -44,12 +44,13 @@
     {#if $statics.locComparison === index}
     
 
-    <main class=" flex flex-col gap-4 mt-2" in:scale>
+    <main class=" flex flex-col gap-4 mt-2 text-black" in:scale>
+        <!--Tittle-->
         <div class="">
             <h2 class="h2 p-2">{route.rowOne.header}</h2>
         </div>
         
-
+        <!--1st box-->
         <div class=" flex flex-col sm:flex-row gap-1">
             <div class="w-full">
                 <img src={route.rowOne.image} alt="loading" class="h-[50vh] w-full" />
@@ -58,9 +59,10 @@
             <Mapper key={index}/>
             
         </div>
-
-        <div class=" flex flex-col gap-4 sm:flex-row text-black">
-            <div class="flex flex-col justify-evenly gap-2 card p-4 shadow-sm shadow-black w-full break-words" in:fly={{x:200, duration:1000}}>
+        <!--2nd box-->
+        <div class=" flex flex-col gap-4 sm:flex-row ">
+            <!--inner 1st box-->
+            <div class="flex flex-col justify-around gap-2 card p-4 shadow-sm shadow-black w-full break-words" in:fly={{x:200, duration:1000}}>
                 <div class="flex flex-col gap-2"> 
                     <h4 class="h4 text-center">{route.rowTwo.innerRowOne.header}</h4>
                     <div class="flex gap-1 items-center">
@@ -88,20 +90,27 @@
                     
                 </div>
 
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2 ">
                     <h5 class="h5 text-center">WANT TO KNOW WHEN WE GOT NEWS ON OUR LATEST PRODUCT? SIGN UP FOR OUR NEWSLETTER NOW!</h5>
+
                     <label>
                         <b>Email:</b>
-                        <input type="text" class="input" bind:value={route.rowTwo.innerRowOne.email}/>
+                        <input type="text" class="input rounded-none " bind:value={route.rowTwo.innerRowOne.email}/>
                     </label>
-                    <Button title="Send" on:click={route.rowTwo.innerRowOne.emailHandler}/> 
+                    <div class="flex">
+                        <div class="w-full"></div>
+                        <Button title="Send" on:click={route.rowTwo.innerRowOne.emailHandler}/> 
+                        <div class="w-full"></div>
+                    </div>
+                    
                 </div>
             </div>
 
-            <div class="card p-4 shadow-sm shadow-black w-full flex flex-col" in:fly={{x:-200, duration:1000}}>
+            <!--inner 2nd box-->
+            <div class="card p-4 shadow-sm shadow-black w-full flex flex-col items-center" in:fly={{x:-200, duration:1000}}>
                 <h4 class="h4">{route.rowTwo.innerRowTwo.header}</h4>
 
-                <div class="flex flex-col gap=2 p-2">
+                <div class="flex flex-col gap-2 p-2">
                     <label>
                         <b>Choose one:</b>
                         <select class="select rounded-none" bind:value={route.rowTwo.innerRowTwo.chooseOne}>
@@ -112,8 +121,6 @@
                         </select>
                     </label>
 
-                    
-                
                     <div class="flex flex-col sm:flex-row sm:gap-2">
                         <label>
                             <b>Name:</b>
@@ -133,7 +140,7 @@
 
                     <label>
                         <b>Message:</b>
-                        <textarea class="textarea rounded-none" bind:value={route.rowTwo.innerRowTwo.message}/>
+                        <textarea class="textarea rounded-none scroll-smooth" bind:value={route.rowTwo.innerRowTwo.message}/>
                     </label>
                     
                     <div class="mt-2 flex gap-2 items-center">

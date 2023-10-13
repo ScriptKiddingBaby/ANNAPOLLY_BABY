@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
-import type { Navigation, DynamicRoute } from "./types";
+import type { Navigation, DynamicRoute, RepoUnits, ConvertedRepoArray } from "./types";
 
 import jollibeeplaza from "$lib/Images/Location/HeadOffice/jollibeeplaza.webp";
 import antipoloBanner from "$lib/Images/Location/AntipoloOffice/antipoloBanner.webp";
@@ -322,4 +322,10 @@ export const statics = writable({
     locComparison: 0.1,
 
     pawalainNatin: true,
+
+    //**Repo variables */
+    newRepoArray:<RepoUnits[]> [],
+
+    units:<RepoUnits> {},
+    
 })

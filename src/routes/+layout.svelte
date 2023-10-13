@@ -1,12 +1,11 @@
 <script lang="ts">
-	import '../app.postcss';
 
+
+	import '../app.postcss';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { LightSwitch, storePopup } from '@skeletonlabs/skeleton';
+	import { LightSwitch, Toast, storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
-
 	import Navigation from "$lib/Components/Navigation.svelte";
 
 	import Footer from './Footer.svelte';
@@ -16,7 +15,15 @@
 	import { onMount } from 'svelte';
 	import { statics } from '$lib';
 	import Popup from '$lib/Components/Popup.svelte';
+	import type { LayoutData } from './$types';
+	import type { RepoUnits } from '$lib/types';
 
+	export let data: LayoutData;
+
+	let repoArray = data.data as RepoUnits[];
+
+	
+	$statics.newRepoArray = repoArray
 	
 
 	onMount(() => {
@@ -25,13 +32,15 @@
 		if($page.url.pathname === "/Career/LoanAgentCareer"){
 			$statics.activeItem = "/Career"
 		}
+
+
+
 	})
 
 
 	let scroll = 0;
 </script>
 <svelte:window bind:scrollY={scroll}/>
-
 
 <div class="">
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { clipboard } from "@skeletonlabs/skeleton";
+
     export let title = "btn title";
     export let loader = false;
     export let ldr_title = "loader title";
@@ -12,6 +14,7 @@
 <button class="{bg} {pad} {round} {text} w-full transition-all hover:shadow-lg hover:shadow-black active:scale-95 hover:font-semibold"
 disabled={loader}
 on:click
+
 >
     {#if loader}
         <div class="flex items-center gap-1 justify-center">
