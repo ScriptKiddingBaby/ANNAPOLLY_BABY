@@ -45,10 +45,10 @@
 
 	<div class="bg-gradient-to-br from-blue-500 to-blue-800 flex flex-col gap-4 py-10 rounded-b-full -mt-4">
 		
-		<div class="flex">
-			<div class="w-full"></div>
+		<div class="max-w-fit mx-auto animate-bounce">
+			
 			<Button  text="text-white border-2 " title="INQUIRE NOW!" on:click={() => goto("/ApplyNow")}/>
-			<div class="w-full"></div>
+			
 		</div>
 	</div>
 
