@@ -121,9 +121,9 @@
                         
                         <div class="flex">
                             <div class="max-w-fit mx-auto text-xs">
-                                <div class="flex items-center gap-1 text-black bg-green-500 px-2 py-1 rounded-lg">
+                                <div class="flex items-center gap-1 text-black px-2 py-1 bg-green-500 rounded-2xl shadow-lg shadow-black animate-bounce">
                                     <img src="https://www.svgrepo.com/show/521542/call-out.svg" alt="loading" class="w-6 p-1 rounded-full border-[0.1rem] border-black" />
-                                    <a href="tel:{units.contact_number}" class="md:hidden">Call Now</a>
+                                    <a href="tel:{units.contact_number}" class="md:hidden ">Call Now</a>
                                 </div>
 
                                 <div class="hidden md:block">
