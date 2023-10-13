@@ -109,7 +109,7 @@
                     <div class="card card-hover p-4 sm:min-w-[30vw] border-[0.1rem] border-white" in:fly={{y:200, duration:700}}>
                         
                         <div class="">
-                            <img src={units.img_url ?? "https://annapolisfinance.com.ph/wp-content/uploads/2023/04/afi-resized.png"} alt="loading" class="w-[200px] h-[200px] mx-auto" />
+                            <img src={units.img_url ?? "https://annapolisfinance.com.ph/wp-content/uploads/2023/04/afi-resized.png"} alt="loading" class="w-full h-[200px] mx-auto" />
                         </div>
                         
                         <div class="p-2">
@@ -121,9 +121,9 @@
                         
                         <div class="flex">
                             <div class="max-w-fit mx-auto text-xs">
-                                <div class="flex items-center gap-1 text-black px-2 py-1 bg-green-500 rounded-2xl shadow-lg shadow-black animate-bounce">
+                                <div class="flex md:hidden items-center gap-1 text-black px-2 py-1 bg-green-500 rounded-2xl shadow-lg shadow-black animate-bounce">
                                     <img src="https://www.svgrepo.com/show/521542/call-out.svg" alt="loading" class="w-6 p-1 rounded-full border-[0.1rem] border-black" />
-                                    <a href="tel:{units.contact_number}" class="md:hidden ">Call Now</a>
+                                    <a href="tel:{units.contact_number}" class="">Call Now</a>
                                 </div>
 
                                 <div class="hidden md:block">
