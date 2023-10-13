@@ -121,7 +121,10 @@
                         
                         <div class="flex">
                             <div class="max-w-fit mx-auto text-xs">
-                                <a href="tel:{units.contact_number}" class="md:hidden">Click to Call</a>
+                                <div class="flex items-center gap-1 text-black bg-green-500 px-2 py-1 rounded-lg">
+                                    <img src="https://www.svgrepo.com/show/521542/call-out.svg" alt="loading" class="w-6 p-1 rounded-full border-[0.1rem] border-black" />
+                                    <a href="tel:{units.contact_number}" class="md:hidden">Call Now</a>
+                                </div>
 
                                 <div class="hidden md:block">
                                     <button use:clipboard={`Name: ${units.name}\nContact Number: ${units.contact_number}\nCondition: ${units.condition}`}
