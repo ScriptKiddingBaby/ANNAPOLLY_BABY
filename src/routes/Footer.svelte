@@ -8,12 +8,12 @@
 
         <div class="flex items-center gap-1">
             
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Terms and Conditions</a>
+            <a href="/Home/Terms-And-Condition" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Terms and Conditions</a>
         </div>
         
         <div class="flex items-center gap-1">
            
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Privacy Policy</a>
+            <a href="/Home/Privacy-Policy" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Privacy Policy</a>
         </div>
 
         <div class="flex items-center gap-1">

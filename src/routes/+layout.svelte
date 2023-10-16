@@ -68,31 +68,33 @@
 		<Popup />
 	{/if}
 	<!--Headers-->
-	<div class="fixed top-0 left-0 right-0 z-10 ">
-		{#if !(scroll > 200)}
-			<div class="bg-green-500 p-4 sm:flex items-center justify-center gap-2 font-mono font-bold" transition:slide>
-				<p class="text-center text-black">Monday - Friday 9:00 am - 6:00 pm</p>
-		
-				<div class="flex items-center justify-center gap-1">
-					<img src="https://www.svgrepo.com/show/435906/mobile.svg" alt="loading" class="w-6 rounded-full border-[0.1rem] border-black p-1"/>
-					<p class="text-black">09294135807</p>
+	{#if !false}
+		<div class="fixed top-0 left-0 right-0 z-10 ">
+			{#if !(scroll > 200)}
+				<div class="bg-green-500 p-4 sm:flex items-center justify-center gap-2 font-mono font-bold" transition:slide>
+					<p class="text-center text-black">Monday - Friday 9:00 am - 6:00 pm</p>
+			
+					<div class="flex items-center justify-center gap-1">
+						<img src="https://www.svgrepo.com/show/435906/mobile.svg" alt="loading" class="w-6 rounded-full border-[0.1rem] border-black p-1"/>
+						<p class="text-black">09294135807</p>
+					</div>
+			
+					<div class="flex items-center justify-center gap-1">
+						<img src="https://www.svgrepo.com/show/494304/facebook-rounded.svg" alt="loading" class="w-6 p-1 rounded-full border-[0.1rem] border-black"/>
+						<p class="text-black">Annapol Finance</p>
+					</div>
+			
+					<div class="flex items-center justify-center gap-1">
+						<img src="https://www.svgrepo.com/show/501173/email.svg" alt="loading" class="w-6 rounded-full p-1 border-[0.1rem] border-black"/>
+						<p class="text-black">customerservice@annapolis.com.ph</p>
+					</div>
 				</div>
+			{/if}
 		
-				<div class="flex items-center justify-center gap-1">
-					<img src="https://www.svgrepo.com/show/494304/facebook-rounded.svg" alt="loading" class="w-6 p-1 rounded-full border-[0.1rem] border-black"/>
-					<p class="text-black">Annapol Finance</p>
-				</div>
-		
-				<div class="flex items-center justify-center gap-1">
-					<img src="https://www.svgrepo.com/show/501173/email.svg" alt="loading" class="w-6 rounded-full p-1 border-[0.1rem] border-black"/>
-					<p class="text-black">customerservice@annapolis.com.ph</p>
-				</div>
-			</div>
-		{/if}
+			<Navigation />
+		</div>
+	{/if}
 	
-		<Navigation />
-	</div>
-
 	<div class="mt-[25vh] sm:mt-[13vh] text-xs sm:text-base p-2">
 		<slot />
 	</div>
