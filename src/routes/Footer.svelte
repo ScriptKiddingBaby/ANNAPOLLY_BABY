@@ -33,7 +33,7 @@
 
         <div class="flex items-center gap-1">
             
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">News and updates</a>
+            <a href="/News-And-Events" class="text-black hover:scale-105 active:scale-95 underline font-semibold">News and updates</a>
         </div>
 
         <div class="flex items-center gap-1">
@@ -95,46 +95,10 @@
         </div>
     </div>
 
-    <!--Previus designerist-->
-   <!--  <div class="flex flex-col gap-2 ">
-        <h4 class="h4 text-center text-blue-500 border-b-2 border-yellow-500 max-w-fit mx-auto">KEEP CONNECTED</h4>
-        <div class="flex flex-col gap-1 text-white">
-            <div class="flex gap-1 items-center">
-                <img src={kc_fb_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">Facebook</a>
-            </div>
-            
-            <div class="flex gap-1 items-center">
-                <img src={kc_ig_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">Instagram</a>
-            </div>
-
-            <div class="flex gap-1 items-center">
-                <img src={kc_tiktok_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">Tiktok</a>
-            </div>
-
-            <div class="flex gap-1 items-center">
-                <img src={kc_twitter_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">Twitter</a>
-            </div>
-
-            <div class="flex gap-1 items-center">
-                <img src={kc_mail_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">mainannapolisfinance@gmail.com</a>
-            </div>
-
-            <div class="flex gap-1 items-center">
-                <img src={kc_rss_icon} alt="loading" class="w-6" />
-                <a href="/" class="text-black underline hover:scale-105 active:scale-95">RSS</a>
-            </div>
-            
-        </div>
-    </div> -->
 </footer>
 
 
 
 <div class="bg-black ">
-        <p class="text-xs text-white sm:text-base text-center p-4">Copyright 2023 Annapolis Finance Inc.</p>
+    <p class="text-xs text-white sm:text-base text-center p-4">Copyright 2023 Annapolis Finance Inc.</p>
 </div>

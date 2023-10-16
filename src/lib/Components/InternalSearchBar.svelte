@@ -3,6 +3,7 @@
     import { createSearchStore, interlnalSEO, searchHandler, statics } from "$lib";
     import type { SEOinternalTypes } from "$lib/types";
 	import { goto } from "$app/navigation";
+	import { scale } from "svelte/transition";
 
     export let pad = "p-2"
 
@@ -29,7 +30,7 @@
     
   
     {#if $searchStore.filtered.length}
-        <div class="card  p-2 rounded-none mt-2 h-[30vh] overflow-auto">
+        <div class="card  p-2 rounded-none mt-2 flex flex-col max-h-[30vh] overflow-auto">
             
             {#each $searchStore.filtered as filtered }
                 
@@ -43,8 +44,10 @@
             
         </div>
     {:else}
-        <div class="card  p-2 rounded-none mt-2">
-            <p>No record found</p>
+        <div class="card  p-2 rounded-none mt-2" >
+            <p class="text-red-500">No record found </p>
+            <p>There might be a bug in location since it was running in memory but it will get fix <b class="animate-ping">soon!</b></p>
+            <p class="text-xs font-bold">-Mikey Fullstack wanna be</p>
         </div>
     {/if}
     
