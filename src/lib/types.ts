@@ -58,10 +58,16 @@ export type RepoUnits = {
     img_url: string
 }
 
-export type ConvertedRepoArray = {
-    column: {
-        item1: RepoUnits | null
-        item2: RepoUnits | null
-        item3: RepoUnits | null
-    }
+export interface InternalSearchModel <T extends Record<PropertyKey, any>> {
+    data: T[]
+    filtered: T[]
+    search: string
+}
+
+export type SEOinternalTypes = {
+    id: number
+    title: string
+    content: string
+    url: string
+    searchPattern?: string
 }

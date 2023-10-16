@@ -17,6 +17,7 @@
 	import Popup from '$lib/Components/Popup.svelte';
 	import type { LayoutData } from './$types';
 	import type { RepoUnits } from '$lib/types';
+	import InternalSearchBar from '$lib/Components/InternalSearchBar.svelte';
 
 	export let data: LayoutData;
 
@@ -41,6 +42,21 @@
 	let scroll = 0;
 </script>
 <svelte:window bind:scrollY={scroll}/>
+
+{#if $statics.showSearch}
+	<div class="fixed bottom-0 top-0 left-0 right-0 z-20 bg-[#00000080] p-2 cursor-default"
+	on:keydown={()=>{}}
+	on:click|self={() => $statics.showSearch = false}
+	role="button"
+	tabindex="0"
+	>
+		<div class="mt-[10vh] mx-auto sm:max-w-xl" transition:scale>
+			<InternalSearchBar />
+		</div>
+
+
+	</div>
+{/if}
 
 <div class="">
 

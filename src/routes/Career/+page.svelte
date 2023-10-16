@@ -4,10 +4,18 @@
     import firstBanner from "$lib/Images/Careers/careerFirstPart.webp";
     import secondBanner from "$lib/Images/Careers/careerSecondPart.webp";
 	import { fly, scale, slide } from "svelte/transition";
+
+    import { onMount } from "svelte";
+    import { statics } from "$lib";
+
+    onMount( () => {
+        $statics.activeItem = "/Career";
+        
+    });
 </script>
 
 <svelte:head>
-    <title>ANNAPOLIS FINANCE CAREER</title>
+    <title>ANNAPOLIS FINANCE &#8211; CAREER</title>
 </svelte:head>
 <main class="" in:scale>
     <div class="flex flex-col sm:flex-row items-center">

@@ -1,0 +1,53 @@
+<script lang="ts">
+	import { onDestroy, onMount } from "svelte";
+    import { createSearchStore, interlnalSEO, searchHandler, statics } from "$lib";
+    import type { SEOinternalTypes } from "$lib/types";
+	import { goto } from "$app/navigation";
+
+    export let pad = "p-2"
+
+    const searchPattern: SEOinternalTypes[] = interlnalSEO.map( (item) => ({...item, searchPattern: `${item.content} ${item.title} ${item.url}`}));
+
+    const searchStore = createSearchStore(searchPattern);
+
+    const unsubscribe = searchStore.subscribe( (modelNikka) => searchHandler(modelNikka));
+
+    onDestroy( () => unsubscribe());
+
+    
+</script>
+
+
+<main class="text-black">
+    <div class="flex items-center justify-end">
+        <div class="absolute p-2 z-10">
+            <img src="https://www.svgrepo.com/show/532555/search.svg" class="w-6" alt="loading img" />
+        </div>
+        <input type="text" placeholder="Blazingly Instant Search" class="input rounded-none {pad}" bind:value={$searchStore.search}/>
+    </div>
+    
+    
+  
+    {#if $searchStore.filtered.length}
+        <div class="card  p-2 rounded-none mt-2 h-[30vh] overflow-auto">
+            
+            {#each $searchStore.filtered as filtered }
+                
+                <div class="w-full text-xs flex flex-col">
+                    <a href={filtered.url} class="p-2 transition-all active:scale-95 mt-1 flex items-center "
+                    on:click={() =>  $statics.showSearch = false}
+                    ><p class="w-full transition-all hover:text-red-500">{filtered.title}</p> <p class="text-slate-500">{filtered.url}</p> </a>
+                </div>
+                
+            {/each}
+            
+        </div>
+    {:else}
+        <div class="card  p-2 rounded-none mt-2">
+            <p>No record found</p>
+        </div>
+    {/if}
+    
+
+
+</main>

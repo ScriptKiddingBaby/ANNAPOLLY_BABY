@@ -10,13 +10,21 @@
 	
 	import Carousel from 'svelte-carousel'
 
-	const banners = [homebanner1, homebanner2]
+	const banners = [homebanner1, homebanner2];
+
+	import { onMount } from "svelte";
+    import { statics } from "$lib";
+
+    onMount( () => {
+        $statics.activeItem = "/";
+        
+    });
 
 	
 </script>
 
 <svelte:head>
-    <title>ANNAPOLIS FINANCE HOME PAGE</title>
+    <title>ANNAPOLIS FINANCE &#8211; HOME PAGE</title>
 </svelte:head>
 
 <main in:scale>

@@ -7,12 +7,15 @@
     import { FileButton } from "@skeletonlabs/skeleton";
 
 
-    onMount( () => $statics.activeItem = "/ApplyNow");
+    onMount( () => {
+        $statics.activeItem = "/ApplyNow";
+        
+    });
 
 </script>
 
 <svelte:head>
-    <title>ANNAPOLIS FINANCE APPLY NOW</title>
+    <title>ANNAPOLIS FINANCE &#8211; APPLY NOW</title>
 </svelte:head>
 
 <main class="" in:scale>

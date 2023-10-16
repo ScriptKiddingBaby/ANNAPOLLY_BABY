@@ -2,10 +2,18 @@
     import { fly, scale } from "svelte/transition";
     import { FileButton } from '@skeletonlabs/skeleton';
     import Button from "$lib/Components/Button.svelte";
+
+    import { onMount } from "svelte";
+    import { statics } from "$lib";
+
+    onMount( () => {
+        $statics.activeItem = "/Career";
+        
+    });
     
 </script>
 <svelte:head>
-    <title>ANNAPOLIS FINANCE JOIN THE TEAM</title>
+    <title>ANNAPOLIS FINANCE  &#8211; JOIN THE TEAM</title>
 </svelte:head>
 
 <main class="" in:scale>

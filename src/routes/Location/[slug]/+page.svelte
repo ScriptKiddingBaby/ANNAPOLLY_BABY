@@ -15,7 +15,9 @@
 	import { goto } from "$app/navigation";
 	import Mapper from "./Mapper.svelte";
 
+   
     onMount(() => {
+        $statics.activeItem = `/Location/${$page.params.slug}`;
         
         if($page.params.slug === "HeadOffice"){
             $statics.locComparison = 0;
@@ -37,7 +39,7 @@
 
 </script>
 <svelte:head>
-    <title>ANNAPOLIS FINANCE {$page.params.slug.toUpperCase()}</title>
+    <title>ANNAPOLIS FINANCE &#8211; {$page.params.slug.toUpperCase()}</title>
 </svelte:head>
 
 {#each $statics.locationRoutes as route, index}
