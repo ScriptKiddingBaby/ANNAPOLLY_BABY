@@ -91,7 +91,7 @@
 				</div>
 			{/if}
 		
-			<Navigation />
+			<Navigation {scroll}/>
 		</div>
 	{/if}
 	

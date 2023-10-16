@@ -18,7 +18,7 @@
 
         <div class="flex items-center gap-1">
             
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Payment Options</a>
+            <a href="/Home/Payment-Options" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Payment Options</a>
         </div>
         
 

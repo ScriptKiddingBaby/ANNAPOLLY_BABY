@@ -42,7 +42,7 @@
 
 </script>
 
-<main class="text-xs sm:text-base  w-full flex  items-center {bg}">
+<main class="text-xs lg:text-base  w-full flex  items-center {bg}">
     <button class="flex w-full items-center p-2 "
     on:click={showMenu}
     >
@@ -61,7 +61,7 @@
 </main>
 
 {#if dsComp.showMenu}
-    <menu class="flex flex-col gap-1 text-xs sm:text-base {bg} {color} sm:fixed p-2" in:slide>
+    <menu class="flex flex-col gap-1 text-xs lg:text-base {bg} {color} lg:fixed p-2" in:slide>
         {#each array_data as selection }
             <a href={selection.url} class="p-2 hover:border-[0.1rem] max-w-fit"
             class:active={$statics.activeItem === selection.url}
