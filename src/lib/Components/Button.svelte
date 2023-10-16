@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { clipboard } from "@skeletonlabs/skeleton";
-
+    
     export let title = "btn title";
     export let loader = false;
     export let ldr_title = "loader title";

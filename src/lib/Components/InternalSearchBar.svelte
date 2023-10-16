@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { onDestroy, onMount } from "svelte";
+	import { onDestroy } from "svelte";
     import { createSearchStore, interlnalSEO, searchHandler, statics } from "$lib";
     import type { SEOinternalTypes } from "$lib/types";
-	import { goto } from "$app/navigation";
-	import { fly, scale, slide } from "svelte/transition";
+	import {  slide } from "svelte/transition";
 
     export let pad = "p-2"
 

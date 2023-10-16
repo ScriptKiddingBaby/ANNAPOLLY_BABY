@@ -4,7 +4,7 @@
 	import '../app.postcss';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { LightSwitch, Toast, storePopup } from '@skeletonlabs/skeleton';
+	import { LightSwitch, storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 	import Navigation from "$lib/Components/Navigation.svelte";
 
@@ -95,7 +95,7 @@
 		</div>
 	{/if}
 	
-	<div class="mt-[25vh] sm:mt-[13vh] text-xs sm:text-base p-2">
+	<div class="mt-[25vh] lg:mt-[13vh] text-xs lg:text-base p-2">
 		<slot />
 	</div>
 

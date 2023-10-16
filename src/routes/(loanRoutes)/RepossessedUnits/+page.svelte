@@ -5,11 +5,11 @@
 
     import { clipboard } from "@skeletonlabs/skeleton";
 
-	import type { ConvertedRepoArray, RepoUnits } from "$lib/types";
+	import type { RepoUnits } from "$lib/types";
 	import { supabase } from "$lib/supabaseConfig";
 
     import { Toast, getToastStore } from '@skeletonlabs/skeleton';
-    import type { ToastSettings, ToastStore } from '@skeletonlabs/skeleton';
+    import type { ToastSettings } from '@skeletonlabs/skeleton';
     import { initializeStores } from '@skeletonlabs/skeleton';
 
     initializeStores();
