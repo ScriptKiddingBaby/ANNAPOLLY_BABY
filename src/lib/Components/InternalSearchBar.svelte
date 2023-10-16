@@ -3,7 +3,7 @@
     import { createSearchStore, interlnalSEO, searchHandler, statics } from "$lib";
     import type { SEOinternalTypes } from "$lib/types";
 	import { goto } from "$app/navigation";
-	import { scale } from "svelte/transition";
+	import { fly, scale, slide } from "svelte/transition";
 
     export let pad = "p-2"
 
@@ -34,7 +34,7 @@
             
             {#each $searchStore.filtered as filtered }
                 
-                <div class="w-full text-xs flex flex-col">
+                <div class="w-full text-xs flex flex-col" transition:slide>
                     <a href={filtered.url} class="p-2 transition-all active:scale-95 mt-1 flex items-center "
                     on:click={() =>  $statics.showSearch = false}
                     ><p class="w-full transition-all hover:text-red-500">{filtered.title}</p> <p class="text-slate-500">{filtered.url}</p> </a>
@@ -45,9 +45,8 @@
         </div>
     {:else}
         <div class="card  p-2 rounded-none mt-2" >
-            <p class="text-red-500">No record found </p>
-            <p>There might be a bug in location since it was running in memory but it will get fix <b class="animate-ping">soon!</b></p>
-            <p class="text-xs font-bold">-Mikey Fullstack wanna be</p>
+            <p class="text-red-500 font-bold">No record found </p>
+            <p class="text-xs text-black">There might be a bug in location since it was running in memory but it will get fix soon!</p>
         </div>
     {/if}
     
