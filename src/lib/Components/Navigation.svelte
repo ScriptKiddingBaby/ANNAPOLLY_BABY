@@ -54,6 +54,7 @@
         dsComp.showLoc = false;
         dsComp.showLoan = false;
         $statics.locComparison = locRoute.index;
+        showMenuFunc();
     }
    
 </script>
@@ -196,7 +197,7 @@
                             <a href={loanRoute.url} class="text-white ">
                                 <button class="p-2 w-full text-left"
                                 class:active={$statics.activeItem === loanRoute.url}
-                                on:click={() => selectHandler(loanRoute)}
+                                on:click={() => dropDown(loanRoute)}
                                 >
                                     {loanRoute.title}
                                 </button>
@@ -218,7 +219,7 @@
                             <a href={locationRoute.url} class="text-white ">
                                 <button class="p-2 w-full text-left"
                                 class:active={$statics.activeItem === locationRoute.url}
-                                on:click={() => selectHandler(locationRoute)}
+                                on:click={() => dropDown(locationRoute)}
                                 >
                                     {locationRoute.title}
                                 </button>
