@@ -416,7 +416,7 @@ export const interlnalSEO: SEOinternalTypes[] = [
 
     {
         id: 10,
-        title: "RepossessedUnits",
+        title: "Repossessed Units",
         content: "/RepossessedUnits",
         url: "/RepossessedUnits",
         
