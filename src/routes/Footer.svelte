@@ -33,21 +33,16 @@
 
         <div class="flex items-center gap-1">
             
-            <a href="/News-And-Events" class="text-black hover:scale-105 active:scale-95 underline font-semibold">News and updates</a>
+            <a href="/Home/News-And-Events" class="text-black hover:scale-105 active:scale-95 underline font-semibold">News and updates</a>
         </div>
 
         <div class="flex items-center gap-1">
             
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Looking for a job?</a>
+            <a href="https://annapolisfinance.com.ph/wp-content/uploads/2023/03/UPDATED-APPLICATION-FORM.pdf" target="_blank" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Download Forms</a>
         </div>
 
         <div class="flex items-center gap-1">
-            
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Download Forms</a>
-        </div>
-
-        <div class="flex items-center gap-1">
-            <a href="/" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Our Campaigns</a>
+            <a href="/Home/OurCampaigns" class="text-black hover:scale-105 active:scale-95 underline font-semibold">Our Campaigns</a>
         </div>
     
         
